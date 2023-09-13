@@ -93,8 +93,16 @@ nav li:active {
     }
 
     header > img {
-        height: 6rem;
-        width: 4rem;
+        height: 7rem;
+        width: 5rem;
+    }
+
+    nav {
+        background-color:  rgb(84, 149, 84, 0.5);
+        width: 30%;
+        border-radius: 15px;
+        padding: auto;
+        outline: none;
     }
 
     nav ul {
@@ -111,13 +119,12 @@ nav li:active {
     margin: 0 auto;
     outline: none;
     padding: 1rem;
-    border-radius: 5px;
-    border: 2px solid brown;
+    border-radius: 20px;
+    border: 5px solid brown;
     width: 70%;
 }
 
 .first-section {
-    /* background-color: rgb(84, 149, 84, 0.5); */
     background-image: url(/American-Beautyberry_Callicarpa-Americana.jpg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +169,7 @@ article {
 }
 
 .gallery {
-    border: 2px solid brown;
+    border: 5px solid brown;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -171,6 +178,10 @@ article {
     margin: 0 auto;
     padding: 30px;
     border-radius: 20px;
+}
+
+.gallery h1 {
+    text-decoration: underline;
 }
 
 .gallery .shrubs {
@@ -205,7 +216,32 @@ article {
 /* Main section media query */
 @media (max-width: 700px) {
     .main-container {
-        margin: 1rem;
+        margin-top: 1rem;
+    }
+
+    article {  
+        margin: 0.5rem 0.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery h1 {
+        font-size: xx-large;
+    }
+
+    .gallery img:hover {
+        width: 290px;
+        height: 220px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: 2px solid green;
     }
 }
 
@@ -218,7 +254,6 @@ footer {
     text-align: center;
     margin-top: 7rem;
     background-color: rgb(165, 42, 42, 30%);
-    color: ;
     font-weight: bolder;
     font-size: x-large;
 }
@@ -229,4 +264,12 @@ footer div {
 
 footer div img {
     width: 6rem;
+}
+
+/* Footer Media Queries */
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
 }
